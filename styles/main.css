@@ -1,8 +1,39 @@
 form{
     display:flex;
     flex-direction: column;
-    max-width: 400px;
+
+}
+.user-created-data{
+    display: flex;
+    justify-content: center;
 }
 .form-div{
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+.form-div input{
+    align-items: center;
+    margin: 5px;
+}
+.form-div textarea{
+    align-items: center;
+    margin: 5px;
+}
+.form-div select{
+    align-items: center;
+    margin: 5px;
+}
+.form-div button {
+    align-items: center;
+    margin: 5px;
+}
+.creation-form{
+    max-width: 400px;
+
+}
+.creation-form h2{
+    text-align: center;
 }
