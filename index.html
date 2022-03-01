@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <img src="" alt="">
+        <title>Journal</title>
+        <div class="user-info"></div>
+    </header>
+    <main>
+        <div class="user-created-data">
+            <section class="creation-form">
+                <h2>Daily Journal</h2>
+                <form action="">
+                    <fieldset>
+                        <div class="form-div">
+                            <label for="journal-date">Date of entry</label>
+                            <input type="date" title="journal-date" id="date-of-entry">
+                        </div>
+                        <div class="form-div">
+                            <label for="concepts-covered">Concepts Covered</label>
+                            <input type="text" title="concepts-covered">
+                        </div>
+                        <div class="form-div">
+                            <label for="journal-entry">Journal Entry</label>
+                            <textarea title="journal-entry" id="" cols="10" rows="3"></textarea>
+                        </div>
+                        <div class="form-div">
+                            <label for="mood-selector">Mood</label>
+                            <select title="mood-selector">
+                                <option value="Happy">Happy</option>
+                                <option value="Neutral">Neutral</option>
+                                <option value="Sad">Sad</option>
+                                </select>
+                        </div>
+                        <div class="form-div">
+                            <button id="record-entry">Record Journal Entry</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="entry-list"></section>
+        </div>
+        <div class="user-data-entry">
+            <section class="journal-title"></section>
+            <article class="journal-body"></article>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
