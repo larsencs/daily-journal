@@ -10,41 +10,38 @@
 <body>
     <header>
         <img src="" alt="">
-        <title>Journal</title>
+        <h1>Daily Journal</h1>
         <div class="user-info"></div>
     </header>
     <main>
         <div class="user-created-data">
-            <section class="creation-form">
-                <h2>Daily Journal</h2>
-                <form action="">
-                    <fieldset>
-                        <div class="form-div">
-                            <label for="journal-date">Date of entry</label>
-                            <input type="date" title="journal-date" id="date-of-entry">
-                        </div>
-                        <div class="form-div">
-                            <label for="concepts-covered">Concepts Covered</label>
-                            <input type="text" title="concepts-covered">
-                        </div>
-                        <div class="form-div">
-                            <label for="journal-entry">Journal Entry</label>
-                            <textarea title="journal-entry" id="" cols="25" rows="10"></textarea>
-                        </div>
-                        <div class="form-div">
-                            <label for="mood-selector">Mood</label>
-                            <select title="mood-selector">
-                                <option value="Happy">Happy</option>
-                                <option value="Neutral">Neutral</option>
-                                <option value="Sad">Sad</option>
+            
+                <section class="creation-form">
+                    <form action="">
+                        <fieldset>
+                            <div class="journal-title">
+                                <!-- <label for="concepts-covered">Concepts Covered</label> -->
+                                <input type="text" title="concepts-covered" placeholder="Title (concepts covered)">
+                            </div>
+                            <div class="form-div">
+                                                        
+                                <label for="journal-date">Date of entry</label>
+                                <input type="date" title="journal-date" id="date-of-entry">
+                                <label for="mood-selector">Mood</label>
+                                <select title="mood-selector">
+                                    <option value="Happy">Happy</option>
+                                    <option value="Neutral">Neutral</option>
+                                    <option value="Sad">Sad</option>
                                 </select>
-                        </div>
-                        <div class="form-div">
-                            <button id="record-entry">Record Journal Entry</button>
-                        </div>
-                    </fieldset>
-                </form>
-            </section>
+                                <button id="record-entry">Record Journal Entry</button>
+                            </div>
+                            <div class="journal-div">
+                                <textarea title="journal-entry" id="" cols="25" rows="10" placeholder="Type your journal entry here"></textarea>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+                
             <section class="entry-list"></section>
         </div>
         <div class="user-data-entry">

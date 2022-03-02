@@ -1,3 +1,12 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 6em;
+    background-color: bisque;
+    margin-bottom: 2em;
+    border-bottom: 1px dotted black;
+    align-items: center;
+}
 form{
     display:flex;
     flex-direction: column;
@@ -5,35 +14,54 @@ form{
 }
 .user-created-data{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
-.form-div{
+.form-div, .journal-div{
     border: 1px solid black;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: baseline;
 }
-.form-div input{
+.journal-div{
+    display:flex;
+    flex-direction: column;
+}
+.form-div{
+    display:flex;
+    justify-content: space-evenly;
+}
+.journal-div textarea{
     align-items: center;
     margin: 5px;
+    width: 99%;
+    height: 30vw;
+    max-height: auto;
+    max-width: auto;
 }
-.form-div textarea{
-    align-items: center;
-    margin: 5px;
+.journal-title{
+    display:flex;
+    justify-content: center;
 }
-.form-div select{
-    align-items: center;
-    margin: 5px;
-}
-.form-div button {
+.form-div select, .form-div button, .form-div input, .journal-title input{
     align-items: center;
     margin: 5px;
 }
 .creation-form{
-    max-width: 400px;
-
+    height: 100%;
+    width: 90%;
+    margin: 0 5em;
+    display:flex;
+    flex-direction: column;
 }
-.creation-form h2{
-    text-align: center;
+footer{
+    height: 6em;
+    background-color: bisque;
+    margin-top: 2em;
+    border-top: 1px dotted black;
+}
+.entry-list{
+    width: 40%;
+    max-width: auto;
+    background-color: bisque;
+    order: -1;
+    margin-left: 1em;
 }
