@@ -18,21 +18,24 @@
             
                 <section class="creation-form">
                     <form action="">
+                        <div class="journal-title">
+                            <!-- <label for="concepts-covered">Concepts Covered</label> -->
+                            <input type="text" title="concepts-covered" placeholder="Title (concepts covered)">
+                        </div>
                         <fieldset>
-                            <div class="journal-title">
-                                <!-- <label for="concepts-covered">Concepts Covered</label> -->
-                                <input type="text" title="concepts-covered" placeholder="Title (concepts covered)">
-                            </div>
                             <div class="form-div">
-                                                        
-                                <label for="journal-date">Date of entry</label>
-                                <input type="date" title="journal-date" id="date-of-entry">
-                                <label for="mood-selector">Mood</label>
-                                <select title="mood-selector">
-                                    <option value="Happy">Happy</option>
-                                    <option value="Neutral">Neutral</option>
-                                    <option value="Sad">Sad</option>
-                                </select>
+                                <div>
+                                    <label for="journal-date">Date of entry</label>
+                                    <input type="date" title="journal-date" id="date-of-entry">
+                                </div>
+                                <div>
+                                    <label for="mood-selector">Mood</label>
+                                    <select title="mood-selector">
+                                        <option value="Happy">Happy</option>
+                                        <option value="Neutral">Neutral</option>
+                                        <option value="Sad">Sad</option>
+                                    </select>
+                                </div>
                                 <button id="record-entry">Record Journal Entry</button>
                             </div>
                             <div class="journal-div">
