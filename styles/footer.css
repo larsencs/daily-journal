@@ -1,6 +1,24 @@
 footer{
     height: 6em;
-    background-color: bisque;
+    background-color: #001923;
     margin-top: 2em;
-    border-top: 1px dotted black;
+    /* border-top: 1px dotted black; */
+}
+.yellow-border-el{
+    height: 10px;
+    background-color: #e0ff8a;
+    margin-top: 2em;
+    box-shadow: 0 0 5px #e0ff8a,
+        0 0 10px #e0ff8a,
+        0 0 15px #e0ff8a,
+        0 0 20px #e0ff8a;
+}
+.red-border-el{
+    height: 10px;
+    background-color: #ff75dd;
+    margin-top: 2em;
+    box-shadow: 0 0 5px #ff75dd,
+        0 0 17px #ff75dd,
+        0 0 15px #ff75dd,
+        0 0 20px #ff75dd;
 }

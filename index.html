@@ -6,43 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Electrolize">
 </head>
 <body>
     <header>
-        <img src="" alt="">
-        <h1>Daily Journal</h1>
-        <div class="user-info"></div>
+        <div class="main-header-el">
+            <img src="/images/logo.png" alt="">
+            <h1>Daily Journal</h1>
+            <div class="user-info"></div>
+        </div>
+        <div class="header-border-el">
+            <!-- empty header to create neon border -->
+        </div>
+        <div class="header-yellow-border-el">
+            <!-- empty header for yellow border -->
+        </div>
     </header>
     <main>
         <div class="user-created-data">
             
                 <section class="creation-form">
-                    <form action="">
-                        <div class="journal-title">
-                            <!-- <label for="concepts-covered">Concepts Covered</label> -->
-                            <input type="text" title="concepts-covered" placeholder="Title (concepts covered)">
-                        </div>
-                        <fieldset>
-                            <div class="form-div">
-                                <div>
-                                    <label for="journal-date">Date of entry</label>
-                                    <input type="date" title="journal-date" id="date-of-entry">
+                    <div class="generate-title-el">
+                        <!-- empty div to display title -->
+                    </div>
+                    <div class="user-form">
+                        <form action="">
+
+                            <fieldset>
+
+                                <div class="form-div">
+                                    
+                                        <label for="concepts-covered">Concepts Covered</label>
+                                        <input type="text" title="concepts-covered" placeholder="Title goes here">
+                    
+                                    
+                                        <label for="journal-date">Date of entry</label>
+                                        <input type="date" title="journal-date" id="date-of-entry">
+                                  
+                                        <label for="mood-selector">Mood</label>
+                                        <select title="mood-selector">
+                                            <option value="Happy">Happy</option>
+                                            <option value="Neutral">Neutral</option>
+                                            <option value="Sad">Sad</option>
+                                        </select>
+                                    
+                                    
                                 </div>
-                                <div>
-                                    <label for="mood-selector">Mood</label>
-                                    <select title="mood-selector">
-                                        <option value="Happy">Happy</option>
-                                        <option value="Neutral">Neutral</option>
-                                        <option value="Sad">Sad</option>
-                                    </select>
+                                <div class="journal-div">
+                                    <textarea title="journal-entry" id="" cols="25" rows="10" placeholder="Type your journal entry here"></textarea>
                                 </div>
                                 <button id="record-entry">Record Journal Entry</button>
-                            </div>
-                            <div class="journal-div">
-                                <textarea title="journal-entry" id="" cols="25" rows="10" placeholder="Type your journal entry here"></textarea>
-                            </div>
-                        </fieldset>
-                    </form>
+                            </fieldset>
+                        </form>
+                    </div>
                 </section>
                 
             <section class="entry-list"></section>
@@ -52,7 +68,14 @@
             <article class="journal-body"></article>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="yellow-border-el">
+            <!-- empty border div -->
+        </div>
+        <div class="red-border-el">
+            <!-- empty border div -->
+        </div>
+    </footer>
     <script src="/scripts/main.js" type="module"></script>
 </body>
 </html>

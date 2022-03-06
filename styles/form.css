@@ -1,6 +1,7 @@
 form{
     display:flex;
     flex-direction: column;
+    
 
 }
 .user-created-data{
@@ -8,7 +9,7 @@ form{
     justify-content: space-between;
 }
 .form-div, .journal-div{
-    border: 1px solid black;
+    /* border: 1px solid #c2ff1a; */
     justify-content: center;
     align-items: baseline;
 }
@@ -20,19 +21,49 @@ form{
     display:flex;
     justify-content: space-evenly;
 }
+::placeholder{
+    color: #fff;
+    text-shadow: 0 0 5px #5cd3ff,
+    0 0 10px #5cd3ff,
+    0 0 15px #5cd3ff;
+}
 .journal-div textarea{
+    color: #fff;
+    border-radius: 15px;
+    overflow:hidden;
+    font-size: 20pt;
+    text-shadow: 0 0 5px #5cd3ff,
+        0 0 10px #5cd3ff,
+        0 0 15px #5cd3ff;
     align-items: center;
     margin: 5px;
     width: 99%;
     height: 75vh;
     max-height: auto;
     max-width: auto;
+    background: radial-gradient(#0084b4, #002937);
 }
 .journal-title{
     display:flex;
     justify-content: center;
+    margin-bottom: 3em;
+}
+input, select{
+    background-color: #0084b4;
+    color: #fff;
+    text-shadow: 0 0 5px #5cd3ff,
+    0 0 10px #5cd3ff,
+    0 0 15px #5cd3ff;
+
+}
+label{
+    color: #fff;
+    text-shadow: 0 0 5px #5cd3ff,
+    0 0 10px #5cd3ff,
+    0 0 15px #5cd3ff;
 }
 .form-div select, .form-div button, .form-div input, .journal-title input{
+    display: flex;
     align-items: center;
     margin: 5px;
 }
@@ -43,3 +74,20 @@ form{
     display:flex;
     flex-direction: column;
 }
+fieldset{
+    /* background-color: #4f555b; */
+    border: double #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #5cd3ff,
+        0 0 30px #5cd3ff,
+        0 0 50px #5cd3ff;
+}
+/* @keyframes glow {
+    0% {box-shadow: 0px 0px -10px red}
+    40% {box-shadow: 0px 0px 20px red}
+    60% {box-shadow: 0px 0px 20px red}
+    100% {box-shadow: 0px 0px -10px red}
+  } */
