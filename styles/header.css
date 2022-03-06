@@ -1,9 +1,49 @@
-header{
+@import url(https://fonts.google.com/specimen/Electrolize);
+
+.main-header-el{
     display: flex;
     justify-content: space-around;
-    height: 6em;
-    background-color: bisque;
-    margin-bottom: 2em;
-    border-bottom: 1px dotted black;
+    height: 15vh;
+    background-color: #001923;
     align-items: center;
 }
+.header-border-el{
+    height: 10px;
+    background-color: #ff75dd;
+    margin-bottom: 2em;
+    box-shadow: 0 0 5px #ff75dd,
+        0 0 17px #ff75dd,
+        0 0 15px #ff75dd,
+        0 0 20px #ff75dd;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+.header-yellow-border-el{
+    height: 10px;
+    background-color: #e0ff8a;
+    margin-bottom: 2em;
+    box-shadow: 0 0 5px #e0ff8a,
+        0 0 10px #e0ff8a,
+        0 0 15px #e0ff8a,
+        0 0 20px #e0ff8a;
+}
+header h1{
+    font-family: Electrolize;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-size: 60pt;
+    text-align: center;
+    padding: 10%;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #fff,
+        0 0 30px #5cd3ff,
+        0 0 40px #5cd3ff,
+        0 0 50px #5cd3ff,
+        0 0 60px #5cd3ff,
+        0 0 70px #5cd3ff;
+  }
