@@ -1,67 +1,10 @@
-header{
-    display: flex;
-    justify-content: space-around;
-    height: 6em;
-    background-color: bisque;
-    margin-bottom: 2em;
-    border-bottom: 1px dotted black;
-    align-items: center;
-}
-form{
-    display:flex;
-    flex-direction: column;
+@import url(./form.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./aside.css);
 
+body{
+    margin: 0em;
 }
-.user-created-data{
-    display: flex;
-    justify-content: space-between;
-}
-.form-div, .journal-div{
-    border: 1px solid black;
-    justify-content: center;
-    align-items: baseline;
-}
-.journal-div{
-    display:flex;
-    flex-direction: column;
-}
-.form-div{
-    display:flex;
-    justify-content: space-evenly;
-}
-.journal-div textarea{
-    align-items: center;
-    margin: 5px;
-    width: 99%;
-    height: 30vw;
-    max-height: auto;
-    max-width: auto;
-}
-.journal-title{
-    display:flex;
-    justify-content: center;
-}
-.form-div select, .form-div button, .form-div input, .journal-title input{
-    align-items: center;
-    margin: 5px;
-}
-.creation-form{
-    height: 100%;
-    width: 90%;
-    margin: 0 5em;
-    display:flex;
-    flex-direction: column;
-}
-footer{
-    height: 6em;
-    background-color: bisque;
-    margin-top: 2em;
-    border-top: 1px dotted black;
-}
-.entry-list{
-    width: 40%;
-    max-width: auto;
-    background-color: bisque;
-    order: -1;
-    margin-left: 1em;
-}
+
+/* https://coolors.co/6ec9eb-919683-de95ca-defa91-690f51 */
