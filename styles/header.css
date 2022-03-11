@@ -1,10 +1,9 @@
-@import url(https://fonts.google.com/specimen/Electrolize);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 .main-header-el{
     display: flex;
     justify-content: space-around;
     height: 15vh;
-    background-color: #001923;
     align-items: center;
 }
 .header-border-el{
@@ -30,7 +29,9 @@ img{
         0 0 20px #e0ff8a;
 }
 header h1{
-    font-family: Electrolize;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
     margin: 0px;
     padding: 0px;
     color: #fff;
