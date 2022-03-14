@@ -1,3 +1,4 @@
+![HTML](https://img.shields.io/badge/HTML-HTML5-yellow) ![CSS](https://img.shields.io/badge/CSS-CSS3-blue) ![Javascript](https://img.shields.io/badge/Javascript-ES6-yellow)
 <div align="center"><h1>Daily Journal</h1></div>
 
 
