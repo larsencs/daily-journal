@@ -71,23 +71,73 @@ label{
     margin: 5px;
 }
 .creation-form{
-    height: 100%;
+    height: 105%;
     width: 90%;
     margin: 0 5em;
     display:flex;
     flex-direction: column;
 }
 fieldset{
-    /* background-color: #4f555b; */
+    background-color: #4f555b;
+    position:relative;
     border: double #fff;
     border-radius: 15px;
     box-shadow: 0 0 5px #fff,
         0 0 10px #fff,
-        0 0 15px #fff,
-        0 0 20px #5cd3ff,
-        0 0 30px #5cd3ff,
-        0 0 50px #5cd3ff;
+        0 0 15px #fff
+        /* filter: blur(15px); */
+        /* transform: scale(0.9) translateZ(0); */
 }
+.glow-shadow{
+    width: 1210px;
+    height: 1220px;
+    /* max-height: auto;
+    max-width: auto; */
+    position:absolute;
+    /* display:flex;
+    flex-direction: column; */
+    filter: blur(25px);
+    background: linear-gradient(
+      to left,
+       #f7003e,
+       #f70088,
+       #f700ce,
+       #da00f7,
+       #b100f7,
+       #8800f7,
+       #6b00f7,
+       #4a00f7,
+       #2d00f7,
+       #1000f7,
+       #0019f7,
+       #003af7,
+       #0056f7,
+       #0073f7,
+       #009cf7,
+       #00c6f7,
+       #00eff7,
+       #00f798,
+       #00f721,
+       #63f700,
+       #a1f700,
+       #d2f700,
+       #f3f700,
+       #f7d200,
+       #f7b500,
+       #f79400,
+       #f76f00,
+       #f74600,
+       #f71d00,
+       #f70000);
+    background-size: 200% 200%;
+    animation: glow 3s linear infinite;
+    
+  }
+
+
+
+
+
 .form-button-el{
     display:flex;
     justify-content: right;
@@ -116,11 +166,14 @@ fieldset{
     0 0 30px #5cd3ff,
     0 0 50px #5cd3ff;
 
-
 }
-/* @keyframes glow {
-    0% {box-shadow: 0px 0px -10px red}
-    40% {box-shadow: 0px 0px 20px red}
-    60% {box-shadow: 0px 0px 20px red}
-    100% {box-shadow: 0px 0px -10px red}
-  } */
+
+
+@keyframes glow {
+    0% {
+    background-position: 0% 50%;
+    }
+    100% {
+    background-position: 200% 50%;
+    }
+}

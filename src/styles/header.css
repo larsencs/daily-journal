@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 .main-header-el{
     display: flex;
@@ -10,10 +12,7 @@
     height: 10px;
     background-color: #ff75dd;
     margin-bottom: 2em;
-    box-shadow: 0 0 5px #ff75dd,
-        0 0 17px #ff75dd,
-        0 0 15px #ff75dd,
-        0 0 20px #ff75dd;
+        animation: glow-red 3s linear alternate infinite;
 }
 img{
     height: 100px;
@@ -23,13 +22,10 @@ img{
     height: 10px;
     background-color: #e0ff8a;
     margin-bottom: 2em;
-    box-shadow: 0 0 5px #e0ff8a,
-        0 0 10px #e0ff8a,
-        0 0 15px #e0ff8a,
-        0 0 20px #e0ff8a;
+    animation: glow-yellow 2s linear alternate infinite;
 }
 header h1{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Rock Salt', sans-serif;
     letter-spacing: 10px;
     text-transform: uppercase;
     margin: 0px;
@@ -47,4 +43,24 @@ header h1{
         0 0 50px #5cd3ff,
         0 0 60px #5cd3ff,
         0 0 70px #5cd3ff;
+  }
+  .flicker-slow{
+    animation: flicker 4s linear infinite;
+  }
+  
+  .flicker-fast{
+    animation: flicker 2s linear infinite;
+  }
+  .flicker-slowest{
+    animation: flicker 6s linear infinite;
+  }
+  
+  @keyframes flicker {
+      0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+      opacity: .99;
+          
+      }
+      20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+          opacity: 0.4;
+      }
   }
