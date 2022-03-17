@@ -10,25 +10,25 @@
 const journal = [
     {
         id: 1,
-        date: "07/24/2025",
-        concept: "HTML & CSS",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        mood: "Ok"
+        date: "02/14/2022",
+        concept: "First day",
+        entry: "Started my first day at NSS. What a rush!",
+        mood: "Neutral"
     }
     ,
     {
         id: 2,
-        date: "07/26/2025",
-        concept: "Complex Flexbox",
-        entry: "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
-        mood: "Sad"
+        date: "02/19/2022",
+        concept: "A week of functions",
+        entry: "We started out with a whole week of writing functions, which was a nice refresher from the pre-work.",
+        mood: "Happy"
     }
     ,
     {
-        id: 2,
-        date: "07/26/2025",
-        concept: "Complex Flexbox",
-        entry: "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
+        id: 3,
+        date: "03/6/2022",
+        concept: "Json-server sucks",
+        entry: "This week is all about fetching data from a server, and working with asynchronous data. It sucks.",
         mood: "Sad"
     }
 ]
@@ -37,6 +37,7 @@ const journal = [
     You export a function that provides a version of the
     raw data in the format that you want
 */
+
 export const getJournalEntries = () => {
     const sortedByDate = journal.sort(
         (currentEntry, nextEntry) =>

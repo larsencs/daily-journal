@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+.entry-list-wrapper{
+    /* position:absolute;
+    right: 70%;
+    width: 30%; */
+}
+
+.entry-list{
+    width: 100%;
+    overflow: auto;
+    border: double #fff;
+    border-radius: 15px;
+    max-width: auto;
+    max-height: 1250px;
+    order: -1;
+    margin-left: 1em;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 20px #5cd3ff,
+    0 0 30px #5cd3ff,
+    0 0 50px #5cd3ff;
+}
+.entry-list::after{
+    position:absolute;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(15px);
+    background: linear-gradient(
+      to left,
+      #ff5770,
+      #e4428d,
+      #c42da8,
+      #9e16c3,
+      #6501de,
+      #9e16c3,
+      #c42da8,
+      #e4428d,
+      #ff5770
+    );
+    background-size: 200% 200%;
+    animation: animateGlow 1.25s linear infinite;
+  }
+.journalEntry{
+    font-family: 'Raleway', sans-serif;
+    border-radius: 15px;
+    color: #fff;
+    margin: 1em;
+    border: double #fff;
+    padding: 1em;
+    background: radial-gradient(#0084b4, #002937);
+    text-shadow: 0 0 5px #5cd3ff,
+    0 0 10px #5cd3ff,
+    0 0 15px #5cd3ff;
+}
+
+/* ::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 15px;
+  }
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#0084b4, #002937);
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+} */
