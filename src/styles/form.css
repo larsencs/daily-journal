@@ -71,14 +71,21 @@ label{
     margin: 5px;
 }
 .creation-form{
-    height: 105%;
+    height: 80vh;
     width: 90%;
     margin: 0 5em;
     display:flex;
     flex-direction: column;
 }
 fieldset{
-    background-color: #4f555b;
+    width: 100%;
+    /* align-self: flex-start; */
+    background-color: #002937;
+    background-image: url("/src/images/circuitry.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     position:relative;
     border: double #fff;
     border-radius: 15px;
@@ -88,14 +95,45 @@ fieldset{
         /* filter: blur(15px); */
         /* transform: scale(0.9) translateZ(0); */
 }
+.generate-title-el{
+    display:flex;
+    /* margin-bottom: 5em; */
+    justify-content: center;
+    /* align-content: center; */
+    position:relative;
+    text-align: center;
+    word-wrap: break-word;
+    height: 20vh;
+    border: 2px solid black;
+    
+}
+.generate-title-el h2{
+    /* align-self: center; */
+    height: 20vh;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-size: 60pt;
+    text-align: center;
+    /* padding: 10%; */
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #fff,
+        0 0 30px #5cd3ff,
+        0 0 40px #5cd3ff,
+        0 0 50px #5cd3ff,
+        0 0 60px #5cd3ff,
+        0 0 70px #5cd3ff;
+}
 .glow-shadow{
-    width: 1210px;
-    height: 1220px;
-    /* max-height: auto;
-    max-width: auto; */
+    margin-top: 19.5em;
+    width: 74em;
+    height: 56.25em;
     position:absolute;
-    /* display:flex;
-    flex-direction: column; */
     filter: blur(25px);
     background: linear-gradient(
       to left,

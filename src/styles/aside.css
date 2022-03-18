@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 .entry-list-wrapper{
-    /* position:absolute;
-    right: 70%;
-    width: 30%; */
+  position: relative;
+  width: 50%;
+  /* right: 50%; */
 }
-
+.filter-form{
+  position:relative;
+  border-radius: 15px;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #4f555b;
+  background-image: url("/src/images/circuitry.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .entry-list{
+  position:relative;
+  background-color: #4f555b;
+  background-image: url("/src/images/circuitry.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     width: 100%;
     overflow: auto;
     border: double #fff;
@@ -22,25 +39,54 @@
     0 0 30px #5cd3ff,
     0 0 50px #5cd3ff;
 }
-.entry-list::after{
-    position:absolute;
-    transform: scale(0.9) translateZ(0);
-    filter: blur(15px);
-    background: linear-gradient(
-      to left,
-      #ff5770,
-      #e4428d,
-      #c42da8,
-      #9e16c3,
-      #6501de,
-      #9e16c3,
-      #c42da8,
-      #e4428d,
-      #ff5770
-    );
-    background-size: 200% 200%;
-    animation: animateGlow 1.25s linear infinite;
-  }
+.entry-glow{
+  width: 635px;
+  height: 1220px;
+  /* max-height: auto;
+  max-width: auto; */
+  top: 5px;
+  left: 7px;
+  position:absolute;
+  /* display:flex;
+  flex-direction: column; */
+  filter: blur(25px);
+  background: linear-gradient(
+    to left,
+     #f7003e,
+     #f70088,
+     #f700ce,
+     #da00f7,
+     #b100f7,
+     #8800f7,
+     #6b00f7,
+     #4a00f7,
+     #2d00f7,
+     #1000f7,
+     #0019f7,
+     #003af7,
+     #0056f7,
+     #0073f7,
+     #009cf7,
+     #00c6f7,
+     #00eff7,
+     #00f798,
+     #00f721,
+     #63f700,
+     #a1f700,
+     #d2f700,
+     #f3f700,
+     #f7d200,
+     #f7b500,
+     #f79400,
+     #f76f00,
+     #f74600,
+     #f71d00,
+     #f70000);
+  background-size: 200% 200%;
+  animation: aside-glow 3s linear infinite;
+  
+}
+
 .journalEntry{
     font-family: 'Raleway', sans-serif;
     border-radius: 15px;
@@ -52,6 +98,14 @@
     text-shadow: 0 0 5px #5cd3ff,
     0 0 10px #5cd3ff,
     0 0 15px #5cd3ff;
+}
+@keyframes aside-glow {
+  0% {
+  background-position: 0% 50%;
+  }
+  100% {
+  background-position: 200% 50%;
+  }
 }
 
 /* ::-webkit-scrollbar {

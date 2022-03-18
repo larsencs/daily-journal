@@ -3,11 +3,10 @@ export const formatJournal = () =>{
     return `
     <div class="nav-el">
     <div class="generate-title-el">
-    <!-- empty div to display title -->
+        <h2>Placeholder Text</h2>
     </div>
-    <div class="user-form">
+
     <form action="" class="journal-el">
-        <div class="glow-shadow"></div>
         <fieldset>
     
         <div class="form-div">   
@@ -30,7 +29,7 @@ export const formatJournal = () =>{
         </div>
     </fieldset>
     </form>
-    </div>
+
     
     </div> 
     `
