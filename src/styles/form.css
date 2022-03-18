@@ -3,15 +3,12 @@
 form{
     display:flex;
     flex-direction: column;
-    
-
 }
 .user-created-data{
     display: flex;
     justify-content: space-between;
 }
 .form-div, .journal-div{
-    /* border: 1px solid #c2ff1a; */
     justify-content: center;
     align-items: baseline;
 }
@@ -71,31 +68,64 @@ label{
     margin: 5px;
 }
 .creation-form{
-    height: 105%;
+    height: 80vh;
     width: 90%;
     margin: 0 5em;
     display:flex;
     flex-direction: column;
 }
 fieldset{
-    background-color: #4f555b;
     position:relative;
+    width: 100%;
+    background-color: #002937;
+    background-image: url("/src/images/circuitry.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
     border: double #fff;
     border-radius: 15px;
     box-shadow: 0 0 5px #fff,
         0 0 10px #fff,
         0 0 15px #fff
-        /* filter: blur(15px); */
-        /* transform: scale(0.9) translateZ(0); */
+
 }
+/* .generate-title-el{
+    display:flex;
+    justify-content: center;
+    position:relative;
+    text-align: center;
+    word-wrap: break-word;
+    border: 2px solid black;
+    margin-bottom: 5em;
+    
+}
+.generate-title-el h2{
+    height: 20vh;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-size: 60pt;
+    text-align: center;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #fff,
+        0 0 30px #5cd3ff,
+        0 0 40px #5cd3ff,
+        0 0 50px #5cd3ff,
+        0 0 60px #5cd3ff,
+        0 0 70px #5cd3ff;
+} */
 .glow-shadow{
-    width: 1210px;
-    height: 1220px;
-    /* max-height: auto;
-    max-width: auto; */
+    /* margin-top: 19.5em; */
+    width: 74em;
+    height: 75em;
     position:absolute;
-    /* display:flex;
-    flex-direction: column; */
     filter: blur(25px);
     background: linear-gradient(
       to left,
@@ -130,14 +160,8 @@ fieldset{
        #f71d00,
        #f70000);
     background-size: 200% 200%;
-    animation: glow 3s linear infinite;
-    
+    animation: glow 3s linear infinite; 
   }
-
-
-
-
-
 .form-button-el{
     display:flex;
     justify-content: right;
@@ -167,8 +191,6 @@ fieldset{
     0 0 50px #5cd3ff;
 
 }
-
-
 @keyframes glow {
     0% {
     background-position: 0% 50%;

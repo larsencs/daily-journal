@@ -27,6 +27,20 @@
       "entry": "Testing!",
       "mood": "Neutral",
       "id": 4
+    },
+    {
+      "id": 3,
+      "date": "03/6/2022",
+      "concept": "Json-server sucks",
+      "entry": "This week is all about fetching data from a server, and working with asynchronous data. It sucks.",
+      "mood": "Sad"
+    },
+    {
+      "id": 3,
+      "date": "03/6/2022",
+      "concept": "Json-server sucks",
+      "entry": "This week is all about fetching data from a server, and working with asynchronous data. It sucks.",
+      "mood": "Sad"
     }
   ]
 }

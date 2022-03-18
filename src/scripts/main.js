@@ -2,12 +2,17 @@ import { JournalEntryComponent } from "./feed/entryFormat.js"
 import { getJournalData } from "./data/dataManager.js"
 import {formatJournal} from "/scripts/feed/formatJournal.js"
 import {usePostCollection, createPost} from "./data/dataManager.js"
+import {renderFilter} from "./feed/filterFormat.js"
 // import {header} from "/scripts/nav/header.js"
 // import {footer} from "/scripts/nav/footer.js"
 
 //Renders the journal object for users to write in
 const renderJournal = () =>{
     document.querySelector(".creation-form").innerHTML += formatJournal;
+}
+const showFilter = () =>{
+    const navElement = document.querySelector(".filter-form")
+    navElement.innerHTML += renderFilter();
 }
 const showHeader = () =>{
     const navElement = document.querySelector("header")
@@ -32,6 +37,7 @@ const EntryListComponent = () => {
 const startJournal = () =>{
     // showHeader();
     EntryListComponent();
+    showFilter();
     renderJournal();
     // showFooter();
 }
@@ -49,8 +55,9 @@ applicationElement.addEventListener("click", clickEvent =>{
 const journalElement = document.querySelector(".journal-el")
 
 journalElement.addEventListener("click", event =>{
-    event.preventDefault()
+    
     if(event.target.id === "record-entry"){
+        event.preventDefault()
         const concept = document.querySelector("input[name='concepts-covered']").value
         const entry = document.querySelector("textarea[name='journal-entry']").value
         const mood = document.querySelector("select[name='mood-selector']").value
@@ -63,6 +70,10 @@ journalElement.addEventListener("click", event =>{
             "mood": mood
         }
         createPost(newEntry)
+            .then(func =>{
+                concept.innerHTML = ""
+                entry.innerHTML = ""
+            })
             .then(EntryListComponent())
     }
 })
