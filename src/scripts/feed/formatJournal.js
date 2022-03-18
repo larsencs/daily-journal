@@ -3,9 +3,9 @@ export const formatJournal = () =>{
     return `
     <div class="nav-el">
     <div class="generate-title-el">
-        <h2>Placeholder Text</h2>
+        
     </div>
-
+    <div class="glow-shadow"></div>
     <form action="" class="journal-el">
         <fieldset>
     

@@ -70,6 +70,10 @@ journalElement.addEventListener("click", event =>{
             "mood": mood
         }
         createPost(newEntry)
+            .then(func =>{
+                concept.innerHTML = ""
+                entry.innerHTML = ""
+            })
             .then(EntryListComponent())
     }
 })

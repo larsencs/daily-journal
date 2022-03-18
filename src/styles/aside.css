@@ -28,7 +28,7 @@
     border: double #fff;
     border-radius: 15px;
     max-width: auto;
-    max-height: 1250px;
+    max-height: 78.125em;
     order: -1;
     margin-left: 1em;
     border: 2px solid #fff;
@@ -85,6 +85,35 @@
   background-size: 200% 200%;
   animation: aside-glow 3s linear infinite;
   
+}
+.filter-form{
+  display:flex;
+  justify-content: space-between;
+}
+.filter-form button{
+  height: 30px;
+  margin: 10px;
+  background-color: #001923;
+  color: #fff;
+  border: double #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Raleway', sans-serif;
+  
+
+}
+.filter-form button:hover{
+  color: #fff;
+  text-shadow: 0 0 5px #5cd3ff,
+  0 0 10px #5cd3ff,
+  0 0 15px #5cd3ff;
+  box-shadow: 0 0 5px #fff,
+  0 0 10px #fff,
+  0 0 15px #fff,
+  0 0 20px #5cd3ff,
+  0 0 30px #5cd3ff,
+  0 0 50px #5cd3ff;
+
 }
 
 .journalEntry{
